@@ -17,6 +17,11 @@ class OutputClass
         Console.WriteLine("{0}", myString);
     }
 
+    public static void staticPrinter()
+    {
+        Console.WriteLine("This is the static printer!");
+    }
+
     // Destructor
     ~OutputClass()
     {
@@ -34,5 +39,6 @@ class ExampleClass
 
         // Call output class' method
         outC1.printString();
+        OutputClass.staticPrinter();
     }
 }
